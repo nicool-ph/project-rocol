@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkMarket - Jual Beli Online</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Dark<span>Market</span></a>
+            
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Cari barang atau jasa...">
+            </div>
+
+            <div class="nav-icons">
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#"><i class="fas fa-bell"></i></a>
+                <a href="#"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Hero -->
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Belanja Aman & Cepat</h1>
+            <p>Temukan ribuan barang bekas baru dan jasa profesional.</p>
+            <button onclick="scrollToProducts()">Mulai Belanja</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Kategori Filter -->
+        <section class="categories">
+            <button class="cat-btn active" onclick="filterProduct('all')">Semua</button>
+            <button class="cat-btn" onclick="filterProduct('elektronik')">Elektronik</button>
+            <button class="cat-btn" onclick="filterProduct('fashion')">Fashion</button>
+            <button class="cat-btn" onclick="filterProduct('otomotif')">Otomotif</button>
+            <button class="cat-btn" onclick="filterProduct('jasa')">Jasa & Service</button>
+        </section>
+
+        <!-- Grid Produk -->
+        <section id="product-section">
+            <h2><i class="fas fa-fire"></i> Rekomendasi Terbaru</h2>
+            <div class="product-grid" id="productContainer">
+                <!-- Produk akan di-render oleh JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 DarkMarket Indonesia. Hubungi WA: 0857-3057-1377</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
